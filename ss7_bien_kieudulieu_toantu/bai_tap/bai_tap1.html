@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    Physics
+    <input type="number" id="number1">
+    Chemistry
+    <input type="number" id="number2">
+    Biology
+    <input type="number" id="number3"><br><br>
+    <button type="button" style="margin-left: 250px" id="total" onclick="doSth()">Total</button>
+    <button  TYPE="button" style="margin-left: 100px" id="average" onclick="average()">Average</button>
+    <h1 id="result"></h1>
+    <script>
+        function doSth(){
+            let number1 = +document.getElementById("number1").value
+            let number2 = +document.getElementById("number2").value
+            let number3 = +document.getElementById("number3").value
+            let total = number1 + number2 + number3
+            console.log(total)
+            document.getElementById("result").innerHTML = "Total = " + total
+        }
+        function average(){
+            let number1 = +document.getElementById("number1").value
+            let number2 = +document.getElementById("number2").value
+            let number3 = +document.getElementById("number3").value
+            let average = (number1 + number2 + number3) / 3
+            console.log(average)
+            document.getElementById("result").innerHTML = "Average = " + average
+
+        }
+    </script>
+</body>
+</html>

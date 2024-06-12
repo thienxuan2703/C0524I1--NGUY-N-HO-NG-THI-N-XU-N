@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" placeholder="Độ C(Celsius)" id="c">
+<button type="button" onclick="convert()">Nhập</button>
+<h3 id="Độ F(Fahrenheit):"></h3>
+<script>
+    function convert() {
+        let doC = +document.getElementById("c").value
+        let doF = (9 * doC / 5) + 32
+        console.log(doF)
+        document.getElementById("result").innerHTML = "Result: " + doF
+    }
+</script>
+</body>
+</html>

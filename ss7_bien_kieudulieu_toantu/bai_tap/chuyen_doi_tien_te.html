@@ -14,7 +14,7 @@
     </tr>
     <tr>
         <td><input id="money" type="number" value="0"></td>
-        <td><select id ="from">
+        <td><select id="from">
             <option value="VND">VietNam</option>
             <option value="USD">Dollar</option>
         </select></td>
@@ -31,18 +31,19 @@
 
 <script>
 
- function changeMoney(){
+    function changeMoney() {
         let money = document.getElementById("money").value;
         let from = document.getElementById("from").value;
         let to = document.getElementById("to").value;
-        let result =0;
-        if (from==="VND"&&to==="USD") {
-            result = money*25000;
-        }
+        let result = 0;
+        if (from === "VND" && to === "USD") {
+            result = money * 25000;
+        } else
+            result = 1
 
-        document.getElementById("result").innerText = "Result:" +result;
+        document.getElementById("result").innerText = "Result:" + result;
 
- }
+    }
 
 </script>
 </body>
