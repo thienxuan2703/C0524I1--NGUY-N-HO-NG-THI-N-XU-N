@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" placeholder="Bán kính hình tròn " id="r">
+<button type="button" onclick="S()">Diện tích hình tròn</button>
+<h3 id="S Circle"></h3>
+<script>
+    function S() {
+        let r = +document.getElementById("r").value
+        let S = r * r * 3.14
+        console.log(S)
+        document.getElementById("S Circle").innerHTML = "S Circle:" + S
+
+    }
+</script>
+</body>
+</html>
