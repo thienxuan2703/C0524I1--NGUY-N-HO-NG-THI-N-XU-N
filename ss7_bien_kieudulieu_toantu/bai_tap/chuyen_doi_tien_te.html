@@ -37,9 +37,11 @@
         let to = document.getElementById("to").value;
         let result = 0;
         if (from === "VND" && to === "USD") {
-            result = money * 25000;
-        } else
-            result = 1
+            result = money / 25000
+        } else if (from === "USD" && to === "VND") {
+            result = money * 25000
+        } else result = money
+
 
         document.getElementById("result").innerText = "Result:" + result;
 
