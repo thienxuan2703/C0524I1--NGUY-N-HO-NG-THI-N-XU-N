@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="S"></p></pt>
+<script>
+    let a = parseInt(prompt("Cạnh thứ 1"))
+    let b = parseInt(prompt("Cạnh thứ 2"))
+    let S = a * b * 2
+    if (a > 0 && b > 0) {
+        alert("Số này hợp lệ")
+        document.getElementById("S").innerHTML = "S tam giác vuông: " + S
+    } else alert("Số này không hợp lệ")
+</script>
+</body>
+</html>

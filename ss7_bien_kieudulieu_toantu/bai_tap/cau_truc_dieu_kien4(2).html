@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="S"></p>
+<script>
+    let a = parseFloat(prompt("Chiều dài hình chữ nhật"))
+    let b = parseFloat(prompt("Chiều rộng hình chữ nhật"))
+    let S = a * b
+    if(a > 0 && b > 0){
+        alert("Số này hợp lệ")
+        document.getElementById("S").innerHTML = "S chữ nhật: " + S
+    } else alert("Số này hợp lệ")
+</script>
+</body>
+</html>
