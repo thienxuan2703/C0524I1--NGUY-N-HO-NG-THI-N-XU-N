@@ -5,9 +5,16 @@
     <title>Title</title>
 </head>
 <body>
+<p id="x"></p>
 <script>
-    let a = parseInt(prompt("x"))
-    let b = parseInt(prompt("b"))
+    let a = parseInt(prompt("a"));
+    let b = parseInt(prompt("b"));
+    let c = -b / a;
+    if (a) {
+        alert("Số này hợp lệ");
+        document.getElementById("x").innerHTML = " Kết quả x = " + c;
+    } else alert("Số này không hợp lệ");
+
 
 </script>
 </body>
