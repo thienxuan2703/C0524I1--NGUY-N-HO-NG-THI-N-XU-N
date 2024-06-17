@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Hiển thị các số nguyên tố đầu tiên trong
+    let number = 1;
+    let count = 0;
+    while (count <= 20) {
+        let soLanChiaHet = 0;
+        for (i = 2; i <= number; i++) {
+            if (number % i === 0) {
+                soLanChiaHet++;
+            }
+        }
+        if (soLanChiaHet === 1) {
+            count++;
+            alert(number);
+        }
+        number++;
+    }
+</script>
+</body>
+</html>

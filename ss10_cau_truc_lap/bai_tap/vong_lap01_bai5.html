@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num1 = 0;
+    let num2 = 1;
+    let soTiepTheo;
+    let sum = 0;
+    for (let i = 1; i <= 20; i++) {
+        document.write(num1 + "<br>");
+        sum += num1;
+        soTiepTheo = num1 + num2;
+        num1 = num2;
+        num2 = soTiepTheo;
+    }
+    document.write("Tổng là: " + sum);
+</script>
+</body>
+</html>
